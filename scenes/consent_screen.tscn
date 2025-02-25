@@ -18,7 +18,7 @@ mouse_filter = 0
 theme_type_variation = &"HeaderLarge"
 text = "Before we begin..."
 
-[node name="CheckButton" type="CheckButton" parent="."]
+[node name="StroknitCheckButton" type="CheckButton" parent="."]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -29,7 +29,7 @@ offset_bottom = 4.0
 grow_vertical = 2
 focus_mode = 0
 
-[node name="StroknitLabel" type="Label" parent="CheckButton"]
+[node name="StroknitLabel" type="Label" parent="StroknitCheckButton"]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -40,14 +40,16 @@ offset_right = 761.0
 offset_bottom = 11.5
 grow_vertical = 2
 tooltip_text = "WOMEN. MEN. NON-BINARY PEOPLE. FEMBOYS. FUNKY KONG. FEMBOY FUNKY KONG. SUSPICIOUSLY 
-ANTHROMORPHIC POKEMON. HENRY OF SKALITZ. THE NUMBER \"58\". GORBINO. 
-HATSUNE MIKU. KIRYU KAZUMA. 
+ANTHROMORPHIC POKEMON. SPYRO THE DRAGON. HENRY OF SKALITZ. THE NUMBER \"58\". GORBINO. 
+HATSUNE MIKU. KIRYU KAZUMA. TIFA LOCKHEART. ZENYATTA. THE ENTIRETY OF YEMEN.
+THE ENTIRE JAPANESE HIRAGANA ALPHABET.
+
 
 RAW, UNLUBRICATED, AND UNFILTERED, UNTIL IT COVERS THE FLOORS, CEILINGS, AND WALLS."
 mouse_filter = 0
 text = "I admit that I stroke my shit to the following (shown in tooltip by hovering over this message):"
 
-[node name="CheckButton2" type="CheckButton" parent="."]
+[node name="DiddlerCheckButton" type="CheckButton" parent="."]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -56,8 +58,9 @@ offset_top = 10.0
 offset_right = 44.0
 offset_bottom = 34.0
 grow_vertical = 2
+focus_mode = 0
 
-[node name="DiddlerLabel" type="Label" parent="CheckButton2"]
+[node name="DiddlerLabel" type="Label" parent="DiddlerCheckButton"]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -69,7 +72,7 @@ offset_bottom = 11.0
 grow_vertical = 2
 text = "I agree to getting my shit DIDDLED CRAAAZY STYLE"
 
-[node name="CheckButton3" type="CheckButton" parent="."]
+[node name="RightsForfeitCheckButton" type="CheckButton" parent="."]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -78,8 +81,9 @@ offset_top = 40.0
 offset_right = 44.0
 offset_bottom = 64.0
 grow_vertical = 2
+focus_mode = 0
 
-[node name="Label" type="Label" parent="CheckButton3"]
+[node name="RightsForfeitLabel" type="Label" parent="RightsForfeitCheckButton"]
 layout_direction = 1
 layout_mode = 1
 anchors_preset = 4
@@ -91,3 +95,20 @@ offset_right = 514.0
 offset_bottom = 11.0
 grow_vertical = 2
 text = "I agree to literally just forfeit my rights. Like no joke, full stop."
+
+[node name="OKButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 496.0
+offset_top = 528.0
+offset_right = 660.0
+offset_bottom = 559.0
+text = "Put me in, coach!"
+
+[node name="ErrorLabel" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 368.0
+offset_top = 576.0
+offset_right = 787.0
+offset_bottom = 599.0
+text = "YAINT FUCKIN CHECKED THE TERMS AND CONDITIONS"
