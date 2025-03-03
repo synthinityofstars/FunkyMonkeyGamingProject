@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://ca54d1h0iy5y"]
+[gd_scene load_steps=2 format=3 uid="uid://ca54d1h0iy5y"]
+
+[ext_resource type="Script" path="res://scripts/consent_screen.gd" id="1_ul1ay"]
 
 [node name="ConsentScreen" type="Control"]
 layout_mode = 3
@@ -8,6 +10,20 @@ anchor_bottom = 1.0
 offset_bottom = -8.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ul1ay")
+
+[node name="MexicoFilterRect" type="ColorRect" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0.294118)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.85098, 0.666667, 0.211765, 1)
 
 [node name="ConsentLabel" type="Label" parent="."]
 layout_mode = 0
@@ -23,22 +39,17 @@ layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_top = -20.0
+offset_top = -39.0
 offset_right = 44.0
-offset_bottom = 4.0
+offset_bottom = -15.0
 grow_vertical = 2
 focus_mode = 0
 
 [node name="StroknitLabel" type="Label" parent="StroknitCheckButton"]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 40.0
-offset_top = -11.5
-offset_right = 761.0
-offset_bottom = 11.5
-grow_vertical = 2
+layout_mode = 0
+offset_left = 44.0
+offset_right = 765.0
+offset_bottom = 23.0
 tooltip_text = "WOMEN. MEN. NON-BINARY PEOPLE. FEMBOYS. FUNKY KONG. FEMBOY FUNKY KONG. SUSPICIOUSLY 
 ANTHROMORPHIC POKEMON. SPYRO THE DRAGON. HENRY OF SKALITZ. THE NUMBER \"58\". GORBINO. 
 HATSUNE MIKU. KIRYU KAZUMA. TIFA LOCKHEART. ZENYATTA. THE ENTIRETY OF YEMEN.
@@ -47,68 +58,116 @@ THE ENTIRE JAPANESE HIRAGANA ALPHABET.
 
 RAW, UNLUBRICATED, AND UNFILTERED, UNTIL IT COVERS THE FLOORS, CEILINGS, AND WALLS."
 mouse_filter = 0
-text = "I admit that I stroke my shit to the following (shown in tooltip by hovering over this message):"
+text = "*I admit that I stroke my shit to the following (shown in tooltip by hovering over this message):"
 
 [node name="DiddlerCheckButton" type="CheckButton" parent="."]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_top = 10.0
+offset_top = -15.0
 offset_right = 44.0
-offset_bottom = 34.0
+offset_bottom = 9.0
 grow_vertical = 2
 focus_mode = 0
 
 [node name="DiddlerLabel" type="Label" parent="DiddlerCheckButton"]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 40.0
-offset_top = -12.0
-offset_right = 430.0
-offset_bottom = 11.0
-grow_vertical = 2
-text = "I agree to getting my shit DIDDLED CRAAAZY STYLE"
+layout_mode = 0
+offset_left = 44.0
+offset_right = 434.0
+offset_bottom = 23.0
+text = "*I agree to getting my shit DIDDLED CRAAAZY STYLE"
 
 [node name="RightsForfeitCheckButton" type="CheckButton" parent="."]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_top = 40.0
+offset_top = 8.0
 offset_right = 44.0
-offset_bottom = 64.0
+offset_bottom = 32.0
 grow_vertical = 2
 focus_mode = 0
 
 [node name="RightsForfeitLabel" type="Label" parent="RightsForfeitCheckButton"]
-layout_direction = 1
+layout_mode = 0
+offset_left = 44.0
+offset_right = 518.0
+offset_bottom = 23.0
+text = "*I agree to literally just forfeit my rights. Like no joke, full stop."
+
+[node name="FullscreenCheckButton" type="CheckButton" parent="."]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 40.0
-offset_top = -12.0
-offset_right = 514.0
-offset_bottom = 11.0
+offset_top = 31.0
+offset_right = 44.0
+offset_bottom = 55.0
 grow_vertical = 2
-text = "I agree to literally just forfeit my rights. Like no joke, full stop."
+focus_mode = 0
+
+[node name="FullscreenLabel" type="Label" parent="FullscreenCheckButton"]
+layout_mode = 0
+offset_left = 44.0
+offset_top = -0.5
+offset_right = 307.0
+offset_bottom = 22.5
+text = "Enable Big Bitch Mode (fullscreen)"
 
 [node name="OKButton" type="Button" parent="."]
-layout_mode = 0
-offset_left = 496.0
-offset_top = 528.0
-offset_right = 660.0
-offset_bottom = 559.0
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -80.0
+offset_top = -80.0
+offset_right = 84.0
+offset_bottom = -49.0
+grow_horizontal = 2
+grow_vertical = 0
 text = "Put me in, coach!"
 
 [node name="ErrorLabel" type="Label" parent="."]
 visible = false
-layout_mode = 0
-offset_left = 368.0
-offset_top = 576.0
-offset_right = 787.0
-offset_bottom = 599.0
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -208.0
+offset_top = -128.0
+offset_right = 211.0
+offset_bottom = -105.0
+grow_horizontal = 2
+grow_vertical = 0
 text = "YAINT FUCKIN CHECKED THE TERMS AND CONDITIONS"
+
+[node name="MexicoFilterCheckButton" type="CheckButton" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = 55.0
+offset_right = 44.0
+offset_bottom = 79.0
+grow_vertical = 2
+focus_mode = 0
+
+[node name="MexicoFilterLabel" type="Label" parent="MexicoFilterCheckButton"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 44.0
+offset_top = -12.0
+offset_right = 306.0
+offset_bottom = 11.0
+grow_vertical = 2
+text = "Enable Breaking Bad Mexico Filter"
+
+[connection signal="toggled" from="FullscreenCheckButton" to="." method="_on_check_button_toggled"]
+[connection signal="toggled" from="MexicoFilterCheckButton" to="." method="_on_mexico_filter_check_button_toggled"]
