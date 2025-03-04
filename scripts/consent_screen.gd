@@ -14,5 +14,3 @@ func _on_mexico_filter_check_button_toggled(toggled_on: bool) -> void:
 		$MexicoFilterRect.show()
 	else:
 		$MexicoFilterRect.hide()
-		
-		

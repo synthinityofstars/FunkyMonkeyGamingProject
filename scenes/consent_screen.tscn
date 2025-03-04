@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://ca54d1h0iy5y"]
 
-[ext_resource type="Script" path="res://scripts/consent_screen.gd" id="1_ul1ay"]
+[ext_resource type="Script" uid="uid://ceh07a4c65t30" path="res://scripts/consent_screen.gd" id="1_ul1ay"]
 
 [node name="ConsentScreen" type="Control"]
 layout_mode = 3
@@ -53,7 +53,7 @@ offset_bottom = 23.0
 tooltip_text = "WOMEN. MEN. NON-BINARY PEOPLE. FEMBOYS. FUNKY KONG. FEMBOY FUNKY KONG. SUSPICIOUSLY 
 ANTHROMORPHIC POKEMON. SPYRO THE DRAGON. HENRY OF SKALITZ. THE NUMBER \"58\". GORBINO. 
 HATSUNE MIKU. KIRYU KAZUMA. TIFA LOCKHEART. ZENYATTA. THE ENTIRETY OF YEMEN.
-THE ENTIRE JAPANESE HIRAGANA ALPHABET.
+THE ENTIRE JAPANESE HIRAGANA ALPHABET. THE NAME \"XUWU\". GEMMA AND ALMA FROM MONSTER HUNTER.
 
 
 RAW, UNLUBRICATED, AND UNFILTERED, UNTIL IT COVERS THE FLOORS, CEILINGS, AND WALLS."
@@ -115,7 +115,7 @@ offset_right = 307.0
 offset_bottom = 22.5
 text = "Enable Big Bitch Mode (fullscreen)"
 
-[node name="OKButton" type="Button" parent="."]
+[node name="OkButton" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -130,7 +130,7 @@ grow_horizontal = 2
 grow_vertical = 0
 text = "Put me in, coach!"
 
-[node name="ErrorLabel" type="Label" parent="."]
+[node name="WarningLabel" type="Label" parent="."]
 visible = false
 layout_mode = 1
 anchors_preset = 7
