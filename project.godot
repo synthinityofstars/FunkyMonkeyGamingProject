@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="FunkyMonkeyGamingProject"
+run/main_scene="uid://ca54d1h0iy5y"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 

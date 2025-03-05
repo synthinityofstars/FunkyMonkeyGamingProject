@@ -34,21 +34,17 @@ mouse_filter = 0
 theme_type_variation = &"HeaderLarge"
 text = "Before we begin..."
 
-[node name="StroknitCheckButton" type="CheckButton" parent="."]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_top = -39.0
-offset_right = 44.0
-offset_bottom = -15.0
-grow_vertical = 2
+[node name="StroknitCheck" type="CheckBox" parent="."]
+layout_mode = 0
+offset_top = 281.0
+offset_right = 24.0
+offset_bottom = 305.0
 focus_mode = 0
 
-[node name="StroknitLabel" type="Label" parent="StroknitCheckButton"]
+[node name="StroknitLabel" type="Label" parent="StroknitCheck"]
 layout_mode = 0
-offset_left = 44.0
-offset_right = 765.0
+offset_left = 24.0
+offset_right = 754.0
 offset_bottom = 23.0
 tooltip_text = "WOMEN. MEN. NON-BINARY PEOPLE. FEMBOYS. FUNKY KONG. FEMBOY FUNKY KONG. SUSPICIOUSLY 
 ANTHROMORPHIC POKEMON. SPYRO THE DRAGON. HENRY OF SKALITZ. THE NUMBER \"58\". GORBINO. 
@@ -60,40 +56,33 @@ RAW, UNLUBRICATED, AND UNFILTERED, UNTIL IT COVERS THE FLOORS, CEILINGS, AND WAL
 mouse_filter = 0
 text = "*I admit that I stroke my shit to the following (shown in tooltip by hovering over this message):"
 
-[node name="DiddlerCheckButton" type="CheckButton" parent="."]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_top = -15.0
-offset_right = 44.0
-offset_bottom = 9.0
-grow_vertical = 2
+[node name="DiddlerCheck" type="CheckBox" parent="."]
+layout_mode = 0
+offset_top = 305.0
+offset_right = 24.0
+offset_bottom = 329.0
 focus_mode = 0
 
-[node name="DiddlerLabel" type="Label" parent="DiddlerCheckButton"]
+[node name="DiddlerLabel" type="Label" parent="DiddlerCheck"]
 layout_mode = 0
-offset_left = 44.0
-offset_right = 434.0
+offset_left = 24.0
+offset_right = 423.0
 offset_bottom = 23.0
 text = "*I agree to getting my shit DIDDLED CRAAAZY STYLE"
 
-[node name="RightsForfeitCheckButton" type="CheckButton" parent="."]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_top = 8.0
-offset_right = 44.0
-offset_bottom = 32.0
-grow_vertical = 2
+[node name="RightsForfeitCheck" type="CheckBox" parent="."]
+layout_mode = 0
+offset_top = 328.0
+offset_right = 24.0
+offset_bottom = 352.0
 focus_mode = 0
 
-[node name="RightsForfeitLabel" type="Label" parent="RightsForfeitCheckButton"]
+[node name="RightsForfeitLabel" type="Label" parent="RightsForfeitCheck"]
 layout_mode = 0
-offset_left = 44.0
-offset_right = 518.0
-offset_bottom = 23.0
+offset_left = 24.0
+offset_top = 1.0
+offset_right = 507.0
+offset_bottom = 24.0
 text = "*I agree to literally just forfeit my rights. Like no joke, full stop."
 
 [node name="FullscreenCheckButton" type="CheckButton" parent="."]
@@ -101,9 +90,9 @@ layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_top = 31.0
+offset_top = 54.0
 offset_right = 44.0
-offset_bottom = 55.0
+offset_bottom = 78.0
 grow_vertical = 2
 focus_mode = 0
 
@@ -145,15 +134,16 @@ offset_bottom = -105.0
 grow_horizontal = 2
 grow_vertical = 0
 text = "YAINT FUCKIN CHECKED THE TERMS AND CONDITIONS"
+horizontal_alignment = 1
 
 [node name="MexicoFilterCheckButton" type="CheckButton" parent="."]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_top = 55.0
+offset_top = 78.0
 offset_right = 44.0
-offset_bottom = 79.0
+offset_bottom = 102.0
 grow_vertical = 2
 focus_mode = 0
 
@@ -169,5 +159,5 @@ offset_bottom = 11.0
 grow_vertical = 2
 text = "Enable Breaking Bad Mexico Filter"
 
-[connection signal="toggled" from="FullscreenCheckButton" to="." method="_on_check_button_toggled"]
+[connection signal="toggled" from="FullscreenCheckButton" to="." method="_on_fullscreen_check_button_toggled"]
 [connection signal="toggled" from="MexicoFilterCheckButton" to="." method="_on_mexico_filter_check_button_toggled"]
