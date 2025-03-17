@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://ca54d1h0iy5y"]
+[gd_scene load_steps=3 format=3 uid="uid://ca54d1h0iy5y"]
 
 [ext_resource type="Script" uid="uid://ceh07a4c65t30" path="res://scripts/consent_screen.gd" id="1_ul1ay"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q82v8"]
 
 [node name="ConsentScreen" type="Control"]
 layout_mode = 3
@@ -34,76 +36,6 @@ mouse_filter = 0
 theme_type_variation = &"HeaderLarge"
 text = "Before we begin..."
 
-[node name="StroknitCheck" type="CheckBox" parent="."]
-layout_mode = 0
-offset_top = 281.0
-offset_right = 24.0
-offset_bottom = 305.0
-focus_mode = 0
-
-[node name="StroknitLabel" type="Label" parent="StroknitCheck"]
-layout_mode = 0
-offset_left = 24.0
-offset_right = 754.0
-offset_bottom = 23.0
-tooltip_text = "WOMEN. MEN. NON-BINARY PEOPLE. FEMBOYS. FUNKY KONG. FEMBOY FUNKY KONG. SUSPICIOUSLY 
-ANTHROMORPHIC POKEMON. SPYRO THE DRAGON. HENRY OF SKALITZ. THE NUMBER \"58\". GORBINO. 
-HATSUNE MIKU. KIRYU KAZUMA. TIFA LOCKHEART. ZENYATTA. THE ENTIRETY OF YEMEN.
-THE ENTIRE JAPANESE HIRAGANA ALPHABET. THE NAME \"XUWU\". GEMMA AND ALMA FROM MONSTER HUNTER.
-
-
-RAW, UNLUBRICATED, AND UNFILTERED, UNTIL IT COVERS THE FLOORS, CEILINGS, AND WALLS."
-mouse_filter = 0
-text = "*I admit that I stroke my shit to the following (shown in tooltip by hovering over this message):"
-
-[node name="DiddlerCheck" type="CheckBox" parent="."]
-layout_mode = 0
-offset_top = 305.0
-offset_right = 24.0
-offset_bottom = 329.0
-focus_mode = 0
-
-[node name="DiddlerLabel" type="Label" parent="DiddlerCheck"]
-layout_mode = 0
-offset_left = 24.0
-offset_right = 423.0
-offset_bottom = 23.0
-text = "*I agree to getting my shit DIDDLED CRAAAZY STYLE"
-
-[node name="RightsForfeitCheck" type="CheckBox" parent="."]
-layout_mode = 0
-offset_top = 328.0
-offset_right = 24.0
-offset_bottom = 352.0
-focus_mode = 0
-
-[node name="RightsForfeitLabel" type="Label" parent="RightsForfeitCheck"]
-layout_mode = 0
-offset_left = 24.0
-offset_top = 1.0
-offset_right = 507.0
-offset_bottom = 24.0
-text = "*I agree to literally just forfeit my rights. Like no joke, full stop."
-
-[node name="FullscreenCheckButton" type="CheckButton" parent="."]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_top = 54.0
-offset_right = 44.0
-offset_bottom = 78.0
-grow_vertical = 2
-focus_mode = 0
-
-[node name="FullscreenLabel" type="Label" parent="FullscreenCheckButton"]
-layout_mode = 0
-offset_left = 44.0
-offset_top = -0.5
-offset_right = 307.0
-offset_bottom = 22.5
-text = "Enable Big Bitch Mode (fullscreen)"
-
 [node name="OkButton" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 7
@@ -136,18 +68,90 @@ grow_vertical = 0
 text = "YAINT FUCKIN CHECKED THE TERMS AND CONDITIONS"
 horizontal_alignment = 1
 
-[node name="MexicoFilterCheckButton" type="CheckButton" parent="."]
+[node name="OptionsVContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_top = 78.0
+offset_top = -92.0
 offset_right = 44.0
-offset_bottom = 102.0
+offset_bottom = 92.0
 grow_vertical = 2
+
+[node name="Checkboxes" type="VBoxContainer" parent="OptionsVContainer"]
+layout_mode = 2
+theme_override_constants/separation = 8
+metadata/_edit_use_anchors_ = true
+
+[node name="StroknitCheck" type="CheckBox" parent="OptionsVContainer/Checkboxes"]
+layout_mode = 2
 focus_mode = 0
 
-[node name="MexicoFilterLabel" type="Label" parent="MexicoFilterCheckButton"]
+[node name="StroknitLabel" type="Label" parent="OptionsVContainer/Checkboxes/StroknitCheck"]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 754.0
+offset_bottom = 23.0
+tooltip_text = "WOMEN. MEN. NON-BINARY PEOPLE. FEMBOYS. FUNKY KONG. FEMBOY FUNKY KONG. SUSPICIOUSLY 
+ANTHROMORPHIC POKEMON. SPYRO THE DRAGON. HENRY OF SKALITZ. THE NUMBER \"58\". GORBINO. 
+HATSUNE MIKU. KIRYU KAZUMA. TIFA LOCKHEART. ZENYATTA. THE ENTIRETY OF YEMEN.
+THE ENTIRE JAPANESE HIRAGANA ALPHABET. THE NAME \"XUWU\". GEMMA AND ALMA FROM MONSTER HUNTER.
+
+
+RAW, UNLUBRICATED, AND UNFILTERED, UNTIL IT COVERS THE FLOORS, CEILINGS, AND WALLS."
+mouse_filter = 0
+text = "*I admit that I stroke my shit to the following (shown in tooltip by hovering over this message):"
+
+[node name="DiddlerCheck" type="CheckBox" parent="OptionsVContainer/Checkboxes"]
+layout_mode = 2
+focus_mode = 0
+
+[node name="DiddlerLabel" type="Label" parent="OptionsVContainer/Checkboxes/DiddlerCheck"]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 423.0
+offset_bottom = 23.0
+text = "*I agree to getting my shit DIDDLED CRAAAZY STYLE"
+
+[node name="RightsForfeitCheck" type="CheckBox" parent="OptionsVContainer/Checkboxes"]
+layout_mode = 2
+focus_mode = 0
+
+[node name="RightsForfeitLabel" type="Label" parent="OptionsVContainer/Checkboxes/RightsForfeitCheck"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 1.0
+offset_right = 507.0
+offset_bottom = 24.0
+text = "*I agree to literally just forfeit my rights. Like no joke, full stop."
+
+[node name="HSeparator" type="HSeparator" parent="OptionsVContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_q82v8")
+
+[node name="CheckButtons" type="VBoxContainer" parent="OptionsVContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+metadata/_edit_use_anchors_ = true
+
+[node name="FullscreenCheckButton" type="CheckButton" parent="OptionsVContainer/CheckButtons"]
+layout_mode = 2
+focus_mode = 0
+
+[node name="FullscreenLabel" type="Label" parent="OptionsVContainer/CheckButtons/FullscreenCheckButton"]
+layout_mode = 0
+offset_left = 44.0
+offset_top = -0.5
+offset_right = 307.0
+offset_bottom = 22.5
+text = "Enable Big Bitch Mode (fullscreen)"
+
+[node name="MexicoFilterCheckButton" type="CheckButton" parent="OptionsVContainer/CheckButtons"]
+layout_mode = 2
+focus_mode = 0
+
+[node name="MexicoFilterLabel" type="Label" parent="OptionsVContainer/CheckButtons/MexicoFilterCheckButton"]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -159,5 +163,5 @@ offset_bottom = 11.0
 grow_vertical = 2
 text = "Enable Breaking Bad Mexico Filter"
 
-[connection signal="toggled" from="FullscreenCheckButton" to="." method="_on_fullscreen_check_button_toggled"]
-[connection signal="toggled" from="MexicoFilterCheckButton" to="." method="_on_mexico_filter_check_button_toggled"]
+[connection signal="toggled" from="OptionsVContainer/CheckButtons/FullscreenCheckButton" to="." method="_on_fullscreen_check_button_toggled"]
+[connection signal="toggled" from="OptionsVContainer/CheckButtons/MexicoFilterCheckButton" to="." method="_on_mexico_filter_check_button_toggled"]
